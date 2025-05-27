@@ -51,11 +51,14 @@ Inside the script, you can easily configure the feed structure:
 
 ```powershell
 $feedStructure = @{
-    rootPath = "//item"     # XML path to repeating items
+    # XML path to repeating items
+    rootPath = "//item"     
     nestedRepeats = @{
-        selling_prices = @("currency", "base_price", "discount_price")          # nested arrays
+         # nested arrays
+        selling_prices = @("currency", "base_price", "discount_price")         
     }
-    flatFields = @("ean", "availability", "availability_count")         # root-level fields
+    # root-level fields
+    flatFields = @("ean", "availability", "availability_count")         
 }
 ```
 
