@@ -30,11 +30,17 @@ On Windows, `PowerShell` should be installed by default.
 ## 🔧 Usage
 ### 🪟 Windows 
 ```powershell
-.\FeedSift.ps1 -xmlUrl "https://example.com/path/to/feed.xml"
+# For a CSV output
+.\SiftFeedWHeader.ps1 -xmlUrl "https://example.com/path/to/feed.xml"
+# For a XML output
+.\SiftFeedXml.ps1 -xmlUrl "https://example.com/path/to/feed.xml"
 ```
 ###  MacOS
 ```bash
-pwsh ./FeedToCSV.ps1 -xmlUrl "https://example.com/path/to/feed.xml"
+# For a CSV output
+pwsh ./SiftFeedWHeader.ps1 -xmlUrl "https://example.com/path/to/feed.xml"
+# For a XML output 
+pwsh ./SiftFeedXml.ps1 -xmlUrl "https://example.com/path/to/feed.xml"
 ```
 
 ### Parameters
